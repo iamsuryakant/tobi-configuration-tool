@@ -1,4 +1,8 @@
 {
+  "/_not-found/page": "app/_not-found/page.js",
+  "/tobiui/configurations/create/page": "app/tobiui/configurations/create/page.js",
+  "/tobiui/configurations/page": "app/tobiui/configurations/page.js",
+  "/(auth)/login/page": "app/(auth)/login/page.js",
   "/page": "app/page.js",
-  "/tobiui/configurations/create/page": "app/tobiui/configurations/create/page.js"
+  "/tobiui/dashboards/page": "app/tobiui/dashboards/page.js"
 }

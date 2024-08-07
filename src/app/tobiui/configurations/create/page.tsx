@@ -242,7 +242,6 @@ export default function CreateConfigurations() {
                         value={JSON.stringify({}, null, 2)}
                         onChange={field.onChange}
                         defaultLanguage='json'
-                        className='rounded-lg'
                       />
                     </div>
                   </FormControl>
@@ -250,12 +249,11 @@ export default function CreateConfigurations() {
                 </FormItem>
               )}
             />
-            <Button
-              type='submit'
-              className='bg-red-600 hover:bg-red-500 mt-10 items-center'
-            >
-              Submit
-            </Button>
+            <div className='mt-10 mb-10 flex justify-center'>
+              <Button type='submit' className='bg-red-600 hover:bg-red-500'>
+                Submit
+              </Button>
+            </div>
           </form>
         </Form>
       </div>

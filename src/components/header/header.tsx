@@ -29,8 +29,9 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { Card, CardContent, CardHeader, CardTitle } from "../ui/card";
+import { Avatar, AvatarFallback, AvatarImage } from '../ui/avatar';
 
-type Checked = DropdownMenuCheckboxItemProps["checked"];
+type Checked = DropdownMenuCheckboxItemProps['checked'];
 
 export default function Header() {
   const [showStatusBar, setShowStatusBar] = useState<Checked>(true);
@@ -73,18 +74,18 @@ export default function Header() {
                   </g>
                 </svg>
               </div>
-              <span className=''>Tobi Configurations</span>
+              <span className='text-sm'>Tobi Configurations</span>
             </Link>
             <Link
               href='/dashboards'
-              className='mx-[-0.65rem] flex items-center gap-4 bg-muted rounded-xl px-3 py-2 text-foreground hover:text-red-600'
+              className='mx-[-0.65rem] mt-5 flex items-center gap-2 bg-muted rounded-xl px-3 py-2 text-foreground hover:text-red-600'
             >
               <LayoutDashboard className='h-5 w-5 text-red-500' />
               Dashboard
             </Link>
             <Link
               href='#'
-              className='mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-red-600'
+              className='mx-[-0.65rem] flex items-center gap-2 rounded-xl px-3 py-2 text-muted-foreground hover:text-red-600'
             >
               <CodeSquare className='h-5 w-5 text-blue-500' />
               Configurations
@@ -94,7 +95,7 @@ export default function Header() {
             </Link>
             <Link
               href='#'
-              className='mx-[-0.65rem] flex items-center gap-4 rounded-xl px-3 py-2 text-muted-foreground hover:text-red-600'
+              className='mx-[-0.65rem] flex items-center gap-2 rounded-xl px-3 py-2 text-muted-foreground hover:text-red-600'
             >
               <Database className='h-5 w-5 text-orange-500' />
               Deployments
@@ -125,7 +126,7 @@ export default function Header() {
               </g>
             </svg>
           </div>
-          <span className=''>Tobi Configurations</span>
+          <span className='hidden md:block text-sm'>Tobi Configurations</span>
         </Link>
       </div>
       <div className='w-full flex justify-end'>
@@ -165,7 +166,10 @@ export default function Header() {
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant='secondary' size='icon' className='rounded-full'>
-            <CircleUser className='h-5 w-5' />
+            <Avatar>
+              <AvatarImage src='https://github.com/shadcn.png' alt='@shadcn' />
+              <AvatarFallback>CN</AvatarFallback>
+            </Avatar>
             <span className='sr-only'>Toggle user menu</span>
           </Button>
         </DropdownMenuTrigger>

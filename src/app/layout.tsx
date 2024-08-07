@@ -22,17 +22,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang='en' suppressHydrationWarning>
       <body
         className={cn(
-          "min-h-screen bg-background font-sans antialiased",
+          'min-h-screen bg-background font-sans antialiased',
           fontSans.variable
         )}
       >
         <Header />
-        <div className="grid min-h-screen w-full grid-cols-[1fr] md:grid-cols-[220px_1fr] lg:grid-cols-[280px_1fr]">
+        <div className='grid min-h-screen w-full md:grid-cols-[190px_1fr] lg:grid-cols-[250px_1fr]'>
           <Sidebar />
-          <main className="flex-1">{children}</main>
+          <main className='flex-1'>{children}</main>
         </div>
       </body>
     </html>
