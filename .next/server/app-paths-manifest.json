@@ -1,6 +1,4 @@
 {
   "/page": "app/page.js",
-  "/tobiui/dashboards/page": "app/tobiui/dashboards/page.js",
-  "/tobiui/configurations/create/page": "app/tobiui/configurations/create/page.js",
-  "/tobiui/configurations/page": "app/tobiui/configurations/page.js"
+  "/tobiui/configurations/create/page": "app/tobiui/configurations/create/page.js"
 }

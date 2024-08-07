@@ -234,14 +234,17 @@ export default function CreateConfigurations() {
                 <FormItem>
                   <FormLabel>Add your configuration below.</FormLabel>
                   <FormControl>
-                    <Editor
-                      height='100vh'
-                      language='json'
-                      theme='vs-light'
-                      value={JSON.stringify({}, null, 2)}
-                      onChange={field.onChange}
-                      defaultLanguage='json'
-                    />
+                    <div className='rounded-xl overflow-hidden'>
+                      <Editor
+                        height='100vh'
+                        language='json'
+                        theme='vs-dark'
+                        value={JSON.stringify({}, null, 2)}
+                        onChange={field.onChange}
+                        defaultLanguage='json'
+                        className='rounded-lg'
+                      />
+                    </div>
                   </FormControl>
                   <FormMessage />
                 </FormItem>
